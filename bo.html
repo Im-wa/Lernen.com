@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>#BO Tag Info</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .tag-page { max-width: 600px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; }
+        .posts { margin-top: 30px; }
+        .post { border-bottom: 1px solid #eee; padding: 16px 0; }
+        a { color: #6366f1; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="tag-page">
+        <h2>#BO</h2>
+        <p>Der Tag <strong>#BO</strong> steht für Berufliche Orientierung.<br>
+        Hier findest du Infos zu Berufswahl, Bewerbungen und Praktika.</p>
+        <ul>
+            <li>Tipps zur Berufswahl</li>
+            <li>Bewerbung und Lebenslauf</li>
+            <li>Vorbereitung auf Vorstellungsgespräche</li>
+            <li>Praktika und Erfahrungen</li>
+        </ul>
+        <div class="posts" id="posts">
+            <h3>Posts mit #BO</h3>
+        </div>
+        <a href="index.html">Zurück zur Startseite</a>
+    </div>
+    <script>
+        function getPosts() {
+            try {
+                return JSON.parse(localStorage.getItem('posts')) || [];
+            } catch {
+                return [];
+            }
+        }
+        function showTagPosts() {
+            const postsDiv = document.getElementById('posts');
+            postsDiv.innerHTML = '<h3>Posts mit #BO</h3>';
+            const posts = getPosts().filter(post => post.tag === 'bo');
+            posts.forEach(post => {
+                const div = document.createElement('div');
+                div.className = 'post';
+                div.innerHTML = `<strong>${post.author}:</strong> ${post.content}`;
+                postsDiv.appendChild(div);
+            });
+        }
+        document.addEventListener('DOMContentLoaded', showTagPosts);
+    </script>
+</body>
+</html>
