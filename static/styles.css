@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+.NuT{
+    color: green;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(252, 252, 252, 0.703);
+}
+.Mathe{
+    color: rgb(251, 0, 0);
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(252, 252, 252, 0.703);
+}
+.English{
+    color: rgb(0, 92, 251);
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(252, 252, 252, 0.703);
+}
+.Franz{
+    color: rgb(226, 0, 251);
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(252, 252, 252, 0.703);
+}
+.Bo{
+    color: rgb(0, 251, 96);
+    border: none;
+    border-radius: 2px;
+}
+.tag-btn {
+    background: #e0e7ff;
+    color: #333;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tag-btn:hover {
+    background: #a5b4fc;
+}
