@@ -9,7 +9,7 @@ lernen-com-backend            #
 ├── static                
 │   └── styles.css      
 ├── templates    
-│   ├── startseite.html
+│   ├── index.html
 │   ├── Franz.html
 │   ├── Musik.html
 │   ├── Bo.html
@@ -23,12 +23,9 @@ lernen-com-backend            #
 ## Requirements
 
  -browser
-
-## Accsess
-This project is ran with github pages.
-- `GET /files`: Lists files in the specified directory.
-- `GET /file?path=<filepath>`: Reads the content of the specified file.
-- `POST /file`: Saves content to the specified file.
+ 
+ ## Accses 
+ this page is ran under github pages.
 
 ## License
 
